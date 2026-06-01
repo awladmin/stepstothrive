@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 
 import { BioSection } from "@/blocks/bio-section";
-import { AepLogo } from "@/components/icons/aep-logo";
-import { HcpcLogo } from "@/components/icons/hcpc-logo";
 import { CtaSection } from "@/blocks/cta-section";
 import { FaqSection } from "@/blocks/faq-section";
 import { Feature42 } from "@/blocks/feature-42";
@@ -11,6 +9,8 @@ import { ProcessSteps } from "@/blocks/process-steps";
 import { SpecialismsBento } from "@/blocks/specialisms-bento";
 import { TestimonialsSection } from "@/blocks/testimonials-section";
 import { TrustStrip } from "@/blocks/trust-strip";
+import { AepLogo } from "@/components/icons/aep-logo";
+import { HcpcLogo } from "@/components/icons/hcpc-logo";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {

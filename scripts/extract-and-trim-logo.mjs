@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+
 import sharp from 'sharp';
 
 const SVG_PATH = 'C:/Users/danny/Downloads/Steps to Thrive.svg';

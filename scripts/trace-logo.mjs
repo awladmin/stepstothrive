@@ -2,6 +2,7 @@
 // Usage: node scripts/trace-logo.mjs <source.png> <output.svg>
 
 import fs from 'node:fs/promises';
+
 import ImageTracer from 'imagetracerjs';
 import sharp from 'sharp';
 
