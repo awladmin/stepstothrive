@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import Script from "next/script";
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.stepstothrive.co.uk"),
   title: {
     default:
-      "Steps to Thrive — Child & Educational Psychology in Amersham",
+      "Steps to Thrive: child & educational psychology in Amersham",
     template: "%s | Steps to Thrive",
   },
   description:
@@ -49,15 +49,37 @@ export const metadata: Metadata = {
   publisher: "Steps to Thrive",
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      {
+        url: "/favicon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+    ],
+    apple: {
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
+    shortcut: { url: "/favicon.ico" },
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     title:
-      "Steps to Thrive — Child & Educational Psychology in Amersham",
+      "Steps to Thrive: child & educational psychology in Amersham",
     description:
       "Educational psychology rooted in evidence, delivered with warmth. Supporting children, young people, families and schools.",
     url: "https://www.stepstothrive.co.uk",
     siteName: "Steps to Thrive",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#FBF6EE",
 };
 
 export default function RootLayout({
@@ -117,7 +139,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "flex min-h-screen flex-col antialiased [--header-height:calc(var(--spacing)*24)] lg:[--header-height:calc(var(--spacing)*30)]",
+          "flex min-h-screen flex-col antialiased [--header-height:calc(var(--spacing)*28)] lg:[--header-height:calc(var(--spacing)*44)]",
           inter.variable,
           fraunces.variable,
         )}

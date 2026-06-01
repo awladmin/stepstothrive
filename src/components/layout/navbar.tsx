@@ -11,6 +11,8 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Fees", href: "/fees" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -27,13 +29,13 @@ const Navbar = () => {
 
   return (
     <header className="relative z-50">
-      <div className="bg-background relative flex h-[var(--header-height)] flex-col items-center justify-center gap-4 px-4">
+      <div className="bg-background relative flex h-[var(--header-height)] flex-col items-center justify-center gap-4 px-4 py-4 lg:gap-5 lg:py-6">
         <Link href="/" aria-label="Steps to Thrive home">
           <Logo />
         </Link>
 
         <nav className="hidden lg:block">
-          <ul className="flex items-center gap-10">
+          <ul className="flex items-center gap-7 xl:gap-9">
             {NAV_LINKS.map((item) => (
               <li key={item.label}>
                 <Link

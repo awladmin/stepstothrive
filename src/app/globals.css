@@ -30,6 +30,8 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-leaf-foreground: var(--leaf-foreground);
+  --color-leaf: var(--leaf);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -60,7 +62,7 @@
 }
 
 /*
- * Steps to Thrive palette — warm cream base with deep sage accent.
+ * Steps to Thrive palette: warm cream base with deep sage accent.
  * Refined once the logo redesign lands.
  */
 :root {
@@ -72,6 +74,8 @@
   --popover: oklch(1 0 0);
   --primary: oklch(0.45 0.06 165);
   --primary-foreground: oklch(0.975 0.012 80);
+  --leaf: oklch(0.62 0.11 145);
+  --leaf-foreground: oklch(1 0 0);
   --secondary: oklch(0.92 0.014 75);
   --secondary-foreground: oklch(0.27 0.018 60);
   --muted: oklch(0.95 0.01 78);
