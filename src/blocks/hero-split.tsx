@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,7 @@ import { cn } from "@/lib/utils";
 interface HeroSplitProps {
   className?: string;
   headline: string;
-  subheadline: string;
+  subheadline: ReactNode;
   cta?: { label: string; href: string };
   /** Optional hero illustration. Falls back to a placeholder panel. */
   image?: { src: string; alt: string };
@@ -25,7 +26,7 @@ const HeroSplit = ({
     <section className={cn("bg-background py-12 md:py-20", className)}>
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="order-2 flex flex-col gap-8 lg:order-1">
+          <div className="flex flex-col gap-8">
             <h1 className="font-serif text-foreground text-4xl tracking-tight md:text-5xl xl:text-6xl">
               {headline}
             </h1>
@@ -41,7 +42,7 @@ const HeroSplit = ({
             )}
           </div>
 
-          <div className="order-1 mx-auto w-full max-w-md lg:order-2 lg:max-w-none">
+          <div className="mx-auto w-full max-w-md lg:max-w-none">
             <AspectRatio
               ratio={4 / 5}
               className="bg-secondary relative overflow-hidden rounded-3xl shadow-xl shadow-primary/5"

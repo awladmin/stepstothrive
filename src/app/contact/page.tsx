@@ -32,23 +32,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-muted/40 py-16 md:py-20">
-        <div className="container max-w-3xl">
-          <div
-            role="note"
-            className="border-primary/30 bg-card text-foreground rounded-2xl border p-6 leading-relaxed"
-          >
-            <p className="font-semibold">In an emergency</p>
-            <p className="text-foreground/85 mt-2 text-sm leading-relaxed">
-              This site is not monitored for emergencies. If you or your
-              child needs urgent help, please contact your GP or NHS 111.
-              For immediate danger, call 999. The Samaritans are available
-              on 116 123, 24 hours a day.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-background py-20 md:py-28">
         <div className="container max-w-3xl">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -102,6 +85,23 @@ export default function ContactPage() {
             * I&apos;ll reply to phone or email enquiries as soon as I
             can.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-muted/40 py-16 md:py-20">
+        <div className="container max-w-3xl">
+          <div
+            role="note"
+            className="border-primary/30 bg-card text-foreground rounded-2xl border p-6 leading-relaxed"
+          >
+            <p className="font-semibold">In an emergency</p>
+            <p className="text-foreground/85 mt-2 text-sm leading-relaxed">
+              This site is not monitored for emergencies. If you or your
+              child needs urgent help, please contact your GP or NHS 111.
+              For immediate danger, call 999. The Samaritans are available
+              on 116 123, 24 hours a day.
+            </p>
+          </div>
         </div>
       </section>
     </>

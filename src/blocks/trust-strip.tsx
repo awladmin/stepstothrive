@@ -58,7 +58,7 @@ const TrustStrip = ({
             {eyebrow}
           </p>
         )}
-        <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-12">
+        <ul className="mt-8 grid grid-cols-2 place-items-center gap-x-6 gap-y-6 md:flex md:flex-wrap md:gap-x-12 md:gap-y-4">
           {items.map((item, i) => {
             // Inline SVG / ReactNode variant: real vector markup in the page
             if (item.node) {

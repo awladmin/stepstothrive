@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { BioSection } from "@/blocks/bio-section";
 import { CtaSection } from "@/blocks/cta-section";
@@ -37,7 +38,33 @@ export default function Home() {
     <>
       <HeroSplit
         headline={hero.headline}
-        subheadline={hero.subheadline}
+        subheadline={
+          <>
+            Educational psychology rooted in evidence, delivered with
+            warmth. Supporting{" "}
+            <Link
+              href="/services/families"
+              className="text-foreground underline underline-offset-4 hover:text-primary"
+            >
+              families
+            </Link>
+            ,{" "}
+            <Link
+              href="/services/schools"
+              className="text-foreground underline underline-offset-4 hover:text-primary"
+            >
+              schools
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="/services"
+              className="text-foreground underline underline-offset-4 hover:text-primary"
+            >
+              professionals
+            </Link>{" "}
+            across Amersham and Buckinghamshire.
+          </>
+        }
         cta={{ label: hero.cta, href: hero.ctaHref }}
         image={{
           src: "/stepstothrive-graphic.png",
