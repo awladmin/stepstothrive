@@ -14,7 +14,7 @@ export default function Logo({ className }: LogoProps) {
       width={1483}
       height={935}
       priority
-      className={cn("h-[4.8rem] w-auto md:h-20 lg:h-24", className)}
+      className={cn("h-20 w-auto md:h-20 lg:h-24", className)}
     />
   );
 }
